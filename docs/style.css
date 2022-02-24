@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&family=Manrope:wght@600;800&family=Overpass:wght@300;500;600&family=Ubuntu:wght@400;500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  background: url(./images/bg-pattern.svg) no-repeat;
+  background-color: hsl(230, 100%, 99%);
+}
+.top-container {
+  width: 540px;
+  height: 145px;
+  background: url(./images/pattern-circles.svg) no-repeat;
+  background-position: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 4.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-container p {
+  margin: 0;
+}
+.top-container h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+hr{
+    border: none;
+    border-top:1px solid hsl(0, 0%, 89%);
+}
+.container {
+  width: 540px;
+  margin: 3.2rem auto;
+  border-radius: 10px;
+  background-color: white;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 82%;
+  margin: auto;
+  margin-top: 1rem;
+}
+header p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 550;
+}
+header h1 {
+  font-size: 40px;
+  color: hsl(227, 35%, 25%);
+  position: relative;
+  left: -11%;
+}
+header .cost{
+  font-size: 40px;
+  color: hsl(227, 35%, 25%);
+}
+header h1 span:last-child {
+  font-weight: 500;
+  position: absolute;
+  top: 30%;
+  left: 104%;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+.slider {
+  margin: 1rem auto;
+  width: 82%;
+}
+
+.billing {
+  display: flex;
+  width: 70%;
+  font-size: 13px;
+  align-items: center;
+  margin: 2.5rem 0rem 2.5rem 9.7rem;
+}
+.switch {
+  width: 40px;
+  height: 20px;
+  margin-right: 1rem;
+  border-radius: 20px;
+  position: relative;
+}
+.switch:hover{
+  background-color: hsl(174, 86%, 45%);
+}
+.round{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  hsl(223, 50%, 87%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.round:before{
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.checkbox{
+  width: 40px;
+  height: 20px;
+  margin: 0;
+opacity: 0;
+cursor: pointer;
+}
+.round:hover{
+  background-color: hsl(174, 80%, 72%);
+}
+.checkbox:checked + .round:before{
+ transform: translateX(18px);
+}
+.checkbox:checked + .round{
+  background-color: hsl(174, 80%, 72%);
+}
+.round{
+  border-radius: 15px;
+}
+
+.round:before {
+  border-radius: 50%;
+}
+.first-child {
+  margin-right: 1rem;
+}
+.discount {
+  border-radius: 15px;
+  margin-right: 0;
+  margin-left: 0.5rem;
+  background-color: hsl(14, 92%, 95%);
+}
+.discount p {
+  margin: 0;
+  font-size: 11px;
+  padding: 0.3rem 0.5rem;
+  color: hsl(15, 100%, 70%);
+  font-weight: 600;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+}
+.items {
+  margin-left: 3rem;
+}
+.items li {
+  list-style: none;
+  margin: 0.7rem 0rem;
+}
+
+.items li img {
+  margin-right: 0.8rem;
+}
+
+.button {
+  margin-right: 2.75rem;
+  margin-top: 1.75rem;
+}
+.button button {
+  width: 175px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: hsl(227, 35%, 25%);
+  color: hsl(223, 50%, 87%);
+  font-weight: 500;
+  border: none;
+  transition: all 0.4s;
+}
+.button button:hover{
+  cursor: pointer;
+  color: white;
+}
+p,
+li,
+span {
+  color: hsl(225, 20%, 60%);
+  font-size: 13px;
+}
+.slider input {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 10px;
+  background: linear-gradient(to right, hsl(174, 77%, 80%) 50%,hsl(224, 65%, 95%) 0%,hsl(224, 65%, 95%) 100%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.slider input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsl(174, 86%, 45%);
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 10px 25px hsl(174, 86%, 45%);
+}
+.slider input::-webkit-slider-thumb:active{
+  cursor: grab;
+  background-color:  hsl(174, 80%, 72%);
+}
